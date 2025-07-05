@@ -47,7 +47,7 @@ app.post('/shorturls',(req,res)=>{
 
 
 })
-app.get('shorturls/:id',(req,res)=>{
+app.get('/shorturls/:id',(req,res)=>{
     let short= req.params.id;
     console.log(short)
     if(urlmap[short]){
